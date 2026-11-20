@@ -1,0 +1,32 @@
+N = 80000 80000
+
+Q2(a) strongest bins
+speech frame: [(np.float64(500.0), np.float64(0.05104)), (np.float64(125.0), np.float64(0.04286)), (np.float64(375.0), np.float64(0.03097)), (np.float64(250.0), np.float64(0.03044)), (np.float64(531.25), np.float64(0.02334)), (np.float64(406.25), np.float64(0.02019))]
+fan frame:    [(np.float64(250.0), np.float64(0.01046)), (np.float64(218.75), np.float64(0.00423)), (np.float64(281.25), np.float64(0.00283)), (np.float64(312.5), np.float64(0.00246))]
+fan peak from 1 Hz scan: 240.0 Hz
+fan frame energy in 200-300 Hz: 84.7 %
+speech frame energy in 200-300 Hz: 11.4 %
+
+Q2(b) Es = 373.7901, Ev = 27.4858, alpha = 2.0738, SNR_in = 5.0000 dB
+
+Q2(c) filter tries
+filter                         |H| at 240   |H| at 500   |H| at 1000   delta SNR (dB)
+highpass, M = 21                  0.155      0.572      1.203     -1.60
+highpass, M = 41                  0.516      1.192      0.877     +0.69
+band-stop at 240 Hz, M = 401      0.002      0.934      1.005     +6.12
+band-stop at 240 Hz, M = 801      0.001      1.002      0.998     +8.64
+
+final filter: M = 801 D = 400 f0 = 240.0
+h[D] = 0.9975031210986267  h[0] = h[M-1] = -0.0024968789013732834 -0.0024968789013732834
+first 5 coefficients: [-0.002497 -0.002486 -0.002453 -0.002398 -0.002322]
+sum of coefficients (gain at 0 Hz): 0.9975031210986269
+largest gain anywhere (2 Hz grid, 0-1000 Hz): 1.229
+gain at 0,100,200,220,230,240,250,260,280,300,500,1000,4000 Hz: [9.980e-01 1.002e+00 9.980e-01 1.002e+00 3.780e-01 1.000e-03 3.510e-01
+ 1.002e+00 9.980e-01 1.002e+00 1.002e+00 9.980e-01 9.980e-01]
+
+Q2(d) SNR_in,I = 5.03 dB, SNR_out = 13.67 dB, delta SNR = +8.64 dB
+speech change only: 18.08 dB,  remaining fan only: 15.64 dB
+fan energy removed: 10.6 dB
+energy of r minus alpha v, relative to alpha v: -8.6 dB
+
+playback scale factor = 1.0

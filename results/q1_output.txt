@@ -1,0 +1,32 @@
+Q1(a) frequency components
+f (Hz)   magnitude   phase (rad)
+  -600        0.05     1.0472  (+pi/3)
+  -300        0.15    -0.7854  (-pi/4)
+  -120        0.30     0.0000  (0)
+   120        0.30     0.0000  (0)
+   300        0.15     0.7854  (+pi/4)
+   600        0.05    -1.0472  (-pi/3)
+Smallest bandlimit B = 600 Hz
+
+Q1(b) fs = 4000 Hz, N = 400, delta f = 10.0 Hz
+peak f (Hz)   |X[k]|/N    phase of X[k] (rad)
+    -600.0     0.0500      1.0472
+    -300.0     0.1500     -0.7854
+    -120.0     0.3000      0.0000
+     120.0     0.3000     -0.0000
+     300.0     0.1500      0.7854
+     600.0     0.0500     -1.0472
+largest of the remaining bins: 1.0695081735315258e-14
+
+Q1(c) fs = 1000 Hz, N = 100, delta f = 10.0 Hz
+peak f (Hz)   |X[k]|/N    phase of X[k] (rad)
+    -400.0     0.0500     -1.0472
+    -300.0     0.1500     -0.7854
+    -120.0     0.3000      0.0000
+     120.0     0.3000     -0.0000
+     300.0     0.1500      0.7854
+     400.0     0.0500      1.0472
+largest of the remaining bins: 3.88361223108559e-15
+f0 = 120 Hz -> l = 0, f_alias = 120 Hz
+f0 = 300 Hz -> l = 0, f_alias = 300 Hz
+f0 = 600 Hz -> l = 1, f_alias = -400 Hz

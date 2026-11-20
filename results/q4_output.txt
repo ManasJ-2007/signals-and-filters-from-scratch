@@ -1,0 +1,45 @@
+max | |H1| - 1 | = 1.1102230246251565e-16
+max | |H2| - 1 | = 4.440892098500626e-16
+unwrapped phase at w = pi: filter 1 = -12.5664 rad, filter 2 = -3.1416 rad
+filter 1 delay: min 4.0000, max 4.0000 samples
+filter 2 delay: first 0.1765, last 5.6661 samples
+formula (1-a^2)/(1+2a cos w + a^2) at w=0 and w=pi: 0.1765, 5.6667
+  around   100 Hz: tau2 = 0.177 samples = 0.011 ms
+  around   500 Hz: tau2 = 0.178 samples = 0.011 ms
+  around  1000 Hz: tau2 = 0.183 samples = 0.011 ms
+  around  2000 Hz: tau2 = 0.205 samples = 0.013 ms
+  around  4000 Hz: tau2 = 0.341 samples = 0.021 ms
+  around  6000 Hz: tau2 = 1.014 samples = 0.063 ms
+  around  8000 Hz: tau2 = 5.666 samples = 0.354 ms
+
+energy: input 373.7901, filter 1 373.7901, filter 2 373.7901
+tail of filter 2 output |u2| at last sample: 1.0292801449052226e-157
+
+max |u1[n+D] - s[n]| over 1.00-1.05 s: 0.0
+shift  relative error of u2[n+shift] vs s[n] over 1.00-1.05 s
+  0    0.053
+  1    0.235
+  2    0.508
+  3    0.759
+  4    0.986
+  5    1.182
+  6    1.342
+  7    1.466
+  8    1.557
+  9    1.619
+ 10    1.655
+ 11    1.672
+ 12    1.676
+ 13    1.671
+ 14    1.658
+ 15    1.634
+ 16    1.599
+ 17    1.550
+ 18    1.490
+ 19    1.422
+ 20    1.355
+best shift: 0 samples, relative error 0.053
+
+max spectrum difference: filter 1 1.34e-14, filter 2 1.12e-14 (largest |X| = 2.77e-03)
+
+playback scale factor = 1.0  peaks: 0.499420166015625 0.49984343251795077

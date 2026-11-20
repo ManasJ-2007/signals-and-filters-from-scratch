@@ -1,0 +1,15 @@
+Q3(a): fs = 4000 Hz, 2B = 1200 Hz, so fs > 2B
+
+fs = 4000 Hz
+  L   terms      RMSE      max err at samples   max err between samples
+   2      5   0.025927   5.55e-17             0.076468
+   8     17   0.012360   1.11e-16             0.034450
+  32     65   0.000828   1.67e-16             0.002722
+ 128    257   0.000661   8.88e-16             0.001835
+
+Q3(c): fs = 1000 Hz < 2B = 1200 Hz
+
+fs = 1000 Hz
+  L   terms      RMSE      max err at samples   max err between samples
+ 128    257   0.099712   1.78e-15             0.196300
+RMSE between reconstruction and the aliased signal (400 Hz version): 0.0005016680812685503
